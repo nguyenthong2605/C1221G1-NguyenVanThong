@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Thuộc tính action: có giá trị là url, địa chỉ server nơi dữ liệu được gửi tới.-->
+<!-- Thuộc tính method: -->
+<form action="/abc" method="post">
+
+    <fieldset>
+        <legend> Tài khoản, mật khẩu </legend>
+        <label class="test" for="taiKhoan">Tài Khoản: </label>
+        <input id="taiKhoan" type="text" name="username" style="width: 500px">
+        <br>
+        <br>
+        <label class="test">Mật khẩu: </label>
+        <input type="password" name="password" placeholder="Nhập mật khẩu">
+    </fieldset>
+    <br>
+    <br>
+
+    <label>Số Căn Cước: </label>
+    <input type="number" name="idcard">
+
+    <br>
+    <br>
+
+    <label>Ngày sinh: </label>
+    <input type="date" name="dayOfBirth">
+
+    <br>
+    <br>
+
+    <label>Giới tính: </label>
+    <input type="radio" name="gender"> Nam
+    <input type="radio" name="gender"> Nữ
+    <input type="radio" name="gender"> Khác
+
+    <br>
+    <br>
+
+    <label>Sở thích: </label>
+    <input type="checkbox" name="hobbies"> Bóng Bá
+    <input type="checkbox" name="hobbies"> Cầu Lông
+    <input type="checkbox" name="hobbies"> Bóng rổ
+    <input type="checkbox" name="hobbies"> Chạy
+
+    <br>
+    <br>
+
+    <label>Avatar: </label>
+    <input type="file">
+
+    <br>
+    <br>
+    <!--    <input type="submit" value="Xác nhận">-->
+    <button type="submit">Xác nhận BTN</button>
+    <button type="reset">Clear thông tin</button>
+</form>
+
+</body>
+</html>
+
+<table border="1px" style="border-collapse: collapse;
+ background-color: aqua" width="1000px" cellpadding="20px">
+
+    <tr>
+        <th> Buổi</th>
+        <th> Thứ 2</th>
+        <th> Thứ 3</th>
+        <th> Thứ 4</th>
+        <th> Thứ 5</th>
+    </tr>
+    <tr>
+        <td rowspan="3"> Sáng</td>
+        <td> Toán</td>
+        <td> Lý</td>
+        <td> Hóa</td>
+        <td> Anh</td>
+    </tr>
+    <tr>
+        <td> Văn</td>
+        <td> Văn</td>
+        <td> Văn</td>
+        <td> Văn</td>
+    </tr>
+    <tr>
+        <td> Sử</td>
+        <td> Địa</td>
+        <td> Hóa</td>
+        <td> Anh</td>
+    </tr>
+    <tr>
+        <td rowspan="3"> Chiều</td>
+        <td> Toán</td>
+        <td> Lý</td>
+        <td> Hóa</td>
+        <td> Anh</td>
+    </tr>
+    <tr>
+        <td> Văn</td>
+        <td> Văn</td>
+        <td> Văn</td>
+        <td> Văn</td>
+    </tr>
+    <tr>
+        <td> Sử</td>
+        <td> Địa</td>
+        <td> Hóa</td>
+        <td> Anh</td>
+    </tr>
+    <tr>
+        <td colspan="5"> Lớp C1221G1</td>
+    </tr>
+</table>
+
+</body>
+</html>
