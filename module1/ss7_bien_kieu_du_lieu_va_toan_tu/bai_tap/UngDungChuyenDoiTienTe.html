@@ -2,33 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
 </head>
 <body>
-<table >
+<table>
     <tr>
         <th>Amount</th>
         <th>From Currency</th>
         <th>To Currency</th>
-
+        <td></td>
     </tr>
     <tr>
-        <td><input></td>
-        <td><select>
-            <option>VND</option>
-            <option>USD</option>
-        </select></td>
-        <td><select>
-            <option>VND</option>
-            <option>USD</option>
+        <td><input id="tien" type="text"></input></td>
+        <td><select id="sl1">
+            <option id="VND1">
+                VND
+            </option>
+            <option  id="USD1">
+                USD
+            </option>
         </select></td>
         <td>
-            <button value="id">convert</button>
+            <select id="sl2">
+                <option id="USD2">
+                    USD
+                </option>
+                <option id="VND2">
+                    VND
+                </option>
+            </select>
         </td>
+        <td><button onclick="tinhToan()">Convert</button></td>
     </tr>
-
+    <tr>
+        <td></td>
+    </tr>
 </table>
-
-
+<script src="UngDungChuyenDoiTienTe.js"></script>
 </body>
 </html>
+white_tick
+eyes
+raised_hands
+
+
+
+
+
