@@ -1,16 +1,16 @@
 function tinhToan() {
 
     let tien = document.getElementById('tien').value;
-    let sl1 = document.getElementById('sl1').value;
-    let sl2 = document.getElementById('sl2').value;
+    let ln1 = document.getElementById('ln1').value;
+    let ln2 = document.getElementById('ln2').value;
     let vnd1 = document.getElementById('VND1').value;
     let vnd2 = document.getElementById('VND2').value;
     let usd1 = document.getElementById('USD1').value;
     let usd2 = document.getElementById('USD2').value;
 
-    if(sl1 == vnd1 && sl2 == usd2) {
+    if(ln1 == vnd1 && ln2 == usd2) {
         tien = tien / 23000
-    } else if ((sl1 == vnd1 && sl2 == vnd2) || (sl1 == usd1 && sl2 == usd2)){
+    } else if ((ln1 == vnd1 && ln2 == vnd2) || (ln1 == usd1 && ln2 == usd2)){
         tien = tien
     }
     else {
