@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="test">
+<button onclick="show()">Click</button>
+</body>
+<script>
+
+    // let, var, const
+    //  let/var nameVariable = value ;
+    // const : DÙng khai báo hằng số, hằng số không thay đổi lại được giá trị.
+    // const EXP = 10;
+    // alert(EXP)
+
+    // document.write("Biến a khai báo = var : " + c);
+    //  b = 20;
+    // document.write("<br>");
+    // document.write("Biến b khai báo = let : " + b);
+    // let b ;
+    // {
+    //    var a = 10;
+    //    let b = 20;
+    // }
+    // document.write("Biến a khai báo = var : " + a);
+    // document.write("Biến b khai báo = let : " + b);
+
+    //    -	Kiểu nguyên thủy : number, string, boolean,
+    //    undefined (chưa gán giá trị cho biến),
+    //    null có nghĩa là giá trị rỗng hoặc không tồn tại.
+    //    symbol .
+
+    // Toán tử số học : +, -, *, /,..
+    // Toán tử tăng giảm: ++ , --
+    // Toán tử gán : = , +=, -=,…
+    // Toán tử so sánh : < , > , >= , <=, ==, === ,..
+    // Toán tử logic : && (và) , || (hoặc) , ! (phủ định)
+    // Toán tử typeof : Kiểm tra kiểu dữ liệu của biến .
+
+    // let b = 10;
+    // let c = "10";
+    // == : Chỉ so sánh giá trị, không so sánh kiểu dữ liệu.
+    // document.write( b == c);
+    // === : Vừa so sánh giá trị, vừa so sánh kiểu dữ liệu.
+    // document.write(b === c);
+
+    // ++a -> Tăng giá trị trước mới thực hiện phép tính
+    // let a = 5;
+    // //        6   6
+    // let b = ++a + a--;
+    //
+    // //        13    6     12  12
+    // let c = ++b + ++a + --b + b++;
+    // // 43
+    // alert(c);
+
+
+    // Phạm vi của biến: Biến toàn cục -> Có thể truy cập được ở bất kỳ đâu ở trong chương trình
+    // Biến cục bộ : Có phạm vi sử dụng là block scope khai báo nó.
+    // Lấy giá trị từ ô input html xuống để tính toán
+    let name = "Chiến" ;
+    function show() {
+        let age = 30;
+        let num = document.getElementById("test").value;
+        let rs = parseInt(num) + 20;
+        alert(rs);
+    }
+
+
+</script>
+</html>
