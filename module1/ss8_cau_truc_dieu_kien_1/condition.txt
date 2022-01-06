@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Nhập điểm của học sinh,
+    // Nếu điểm nhập vào >= 90 thì hiển thị "Xuất sắc"
+    // Nếu điểm >=90 -> Xết nếu score >= 100 -> Điển tối đa.
+    // Nếu điểm nhập vào >= 75 và < 90 thì hiển thị "Loại giỏi".
+    // Nếu điểm nhập vào < 75 thì sẽ hiện thị là "Không đạt".
+
+    // let score = parseFloat(prompt("Nhập điểm: "));
+    //
+    // if (score >= 90){
+    //
+    //     if (score >= 100){
+    //         alert("Điểm tối đa");
+    //     } else {
+    //         alert("Loại xuất sắc");
+    //     }
+    //
+    // } else if (score >= 75  ) {
+    //
+    //     alert("Loại giỏi");
+    //
+    // } else {
+    //
+    //     alert("Không đạt");
+    // }
+
+    // Nhập số từ bàn phím
+    // Nếu nhập số 1 -> Chủ nhật
+    // Nếu nhập số 2 -> Thứ 2
+    // Nếu nhập số 3 -> Thứ 3
+    // Nếu nhập số 4 -> Thứ 4 ...
+
+    // let num = parseInt(prompt("Nhập số ngày"));
+    //
+    // switch (num) {
+    //
+    //     case 1:
+    //         alert("Chủ nhật");
+    //         break;
+    //     case 2:
+    //         alert("Thứ 2");
+    //         break;
+    //     case 3:
+    //         alert("Thứ 3");
+    //         break;
+    //     case 4:
+    //         alert("Thứ 4");
+    //         break;
+    //     case 5:
+    //         alert("Thứ 5");
+    //         break;
+    //     case 6:
+    //         alert("Thứ 6");
+    //         break;
+    //     case 7:
+    //         alert("Thứ 7");
+    //         break;
+    //     default :
+    //         alert("NHập sai ngày, vui lòng nhập từ 1 - 7");
+    //         break;
+    // }
+
+
+
+
+    // let month = parseInt(prompt("Nhập tháng"));
+    // switch (month) {
+    //     case 1:
+    //     case 3:
+    //     case 5:
+    //     case 7:
+    //     case 9:
+    //     case 11:
+    //         alert("Có 31 ngày!");
+    //         break;
+    //     case 4:
+    //     case 6:
+    //     case 8:
+    //     case 10:
+    //     case 12:
+    //         alert("Có 30 ngày");
+    //         break;
+    // }
+
+//    score >= 75 -> Loại giỏi
+//    score >= 50 -> Loại trung bình
+//    score < 50  -> Loại kém
+//    condition ? expression_true_case : expression_false_case
+//     let score = prompt("Nhập điểm");
+//
+//     score >= 75 ? alert("Loại giỏi") :
+//         (score >= 50) ? alert("Loại trung bình") : alert("Loại kém") ;
+
+
+
+</script>
+</body>
+</html>
