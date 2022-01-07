@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let a=parseFloat(prompt("Nhập a: "));
+   let b=parseFloat(prompt("Nhập b: "));
+    if(a === 0) {
+        if(b === 0){
+            document.write("Phương trình có vô số nghiệm x.");
+        }
+        else{
+            document.write("Phương trình có nghiệm x=0");
+        }
+    }
+    else{
+        document.write("x = " + (-b/a) );
+    }
+</script>
+</body>
+</html>

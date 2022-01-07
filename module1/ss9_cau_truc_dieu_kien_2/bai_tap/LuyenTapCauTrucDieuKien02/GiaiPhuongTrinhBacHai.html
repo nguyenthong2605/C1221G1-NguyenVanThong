@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    let a=parseFloat(prompt("Nhập a: "));
+    let b=parseFloat(prompt("Nhập b: "));
+    let c=parseFloat(prompt("Nhập c: "));
+    let d=(b * b) - (4 * a * c);
+    if (a===0){
+        if(b === 0) {
+            if (c === 0) {
+                document.write("Phương trình có vô số nghiệm x.");
+            } else {
+                document.write("Phương trình vô nghiệm.");
+            }
+        }
+        else{
+            document.write("Phương trình có nghiệm x= "+(-c/b));
+        }
+    }
+    else if (d>0) {
+        document.write("x1="+((-b + Math.sqrt(d))/(2*a)));
+        document.write("<br>");
+        document.write("x2="+((-b - Math.sqrt(d))/(2*a)));
+    }else if (d===0) {
+        document.write("Phường trình có nghiệm kép x= "+(-b/2*a));
+    }else {
+        document.write("Phương trình vô nghiêm.");
+    }
+</script>
+</body>
+</html>

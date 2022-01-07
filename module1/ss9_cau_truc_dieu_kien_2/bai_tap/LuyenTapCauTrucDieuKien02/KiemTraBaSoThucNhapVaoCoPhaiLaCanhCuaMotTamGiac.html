@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("Nhập cạnh a= "));
+    let b=parseFloat(prompt("Nhập cạnh b= "));
+    let c=parseFloat(prompt("Nhập cạnh c= "));
+    if (a,b,c>0) {
+        if ( a + b > c ) {
+            if (b+c>a) {
+                if (a+c>b) {
+                    alert("a,b,c là cạnh của một tam giác");
+                }else
+                    alert("a,b,c không phải là cạnh của một tam giác.");
+            }else
+                alert("a,b,c không phải là cạnh của một tam giác.");
+        }else
+            alert("a,b,c không phải là cạnh của một tam giác.");
+    }else
+        alert("a,b,c không phải là cạnh của một tam giác.");
+</script>
+</body>
+</html>

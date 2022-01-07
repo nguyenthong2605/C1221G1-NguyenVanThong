@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("Điểm bài kiểm tra:"));
+    let b=parseFloat(prompt("Điểm thi giữa kỳ:"));
+    let c=parseFloat(prompt("Điểm thi cuối kỳ:"));
+    let avr=(a+b+c)/3;
+    if (avr>=9){
+        alert("Loại xuất sắc.");
+    }else if(avr>=8){
+        alert("Loại giỏi.");
+    }else if(avr>=6.5){
+        alert("Loại khá.");
+    }else if(avr>=4){
+        alert("Loại trung bình.");
+    }else {
+        alert("Loại Yếu.");
+    }
+</script>
+
+</body>
+</html>
