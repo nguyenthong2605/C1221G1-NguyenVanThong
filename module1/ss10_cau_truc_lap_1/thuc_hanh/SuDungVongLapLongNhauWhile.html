@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="display"></p>
+<script>
+    let tableString = '<table border="1" width="300" cellpadding="3" cellspacing="0">';
+    let dong = 1;
+    let cot = 1;
+    while (dong <= 10) {
+        tableString += '<tr>';
+        cot=1;
+        while (cot <= 10) {
+            cot++;
+            tableString += '<td>' + (dong * cot) + '</td>';
+        }
+        tableString += '</tr>';
+        dong++;
+    }
+    tableString += '</table>';
+
+    document.getElementById("display").innerHTML = tableString;
+</script>
+
+</body>
+</html>

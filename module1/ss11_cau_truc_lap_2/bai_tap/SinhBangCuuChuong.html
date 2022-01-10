@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="display"></p>
+<script>
+    let tableString = '<table border="1" width="1500" cellpadding="10" cellspacing="2">';
+    let dong = 1;
+    let cot = 1;
+    for (let dong =1 ;dong<=9;dong++){
+        tableString +='<tr>';
+        for (let cot =2;cot<=9;cot++){
+            tableString +='<td></td>';
+        }
+        tableString+= '</tr>';
+    }
+    tableString+='</table>';
+    document.getElementById("display").innerHTML=tableString;
+</script>
+</body>
+</html>
