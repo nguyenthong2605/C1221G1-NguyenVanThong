@@ -8,18 +8,18 @@
 
 <p id="display"></p>
 <script>
-    let tableString = '<table border="1" width="1500" cellpadding="10" cellspacing="2">';
-    let dong = 1;
-    let cot = 1;
-    for (let dong =1 ;dong<=9;dong++){
-        tableString +='<tr>';
-        for (let cot =2;cot<=9;cot++){
-            tableString +='<td></td>';
+    let cuuChuong = '<table border="1" width="1500" cellpadding="10" cellspacing="2">';
+    let j = 1;
+    let i = 1;
+    for (let j =1 ;j<=9;j++){
+        cuuChuong+='<tr>';
+        for (let i =2;i<=9;i++){
+            cuuChuong +="<td>" + i +'x'+ j +'='+ i*j + "</td>"
         }
-        tableString+= '</tr>';
+        cuuChuong+= '</tr>';
     }
-    tableString+='</table>';
-    document.getElementById("display").innerHTML=tableString;
+    cuuChuong+='</table>';
+    document.getElementById("display").innerHTML=cuuChuong;
 </script>
 </body>
 </html>

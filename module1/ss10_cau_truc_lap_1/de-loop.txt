@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+</body>
+<script>
+    // In ra màn hình số 1 -> 100 ;
+
+    // for (let i = 1; i <= 100; i++) {
+    //     if ( i % 2 === 0 ){
+    //         continue;
+    //     }
+    //     document.write(i);
+    //     document.write("<br>");
+    // }
+
+    // In hình chữ nhật ;
+    // Vòng lặp for ngoài dùng để tạo dòng
+    // for ( let i = 0 ; i < 5 ; i++ ){
+    //     // Vòng lặp for ở trong dùng để vẽ nội dung trong dòng.
+    //     for (let j = 0; j <= i; j++){
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
+
+
+    //    while ( biểu thức điều kiện ) {
+    // Khối lệnh thực thi mỗi lần lặp.
+    // }
+
+    //    Nhập password, Nếu nhập password = codegym thì hiện là "Đăng nhập thành công"
+    //                   Nếu nhập sai thì bắt nhập lại cho tới khi đúng thì thôi.
+    //                   Nếu người dùng nhập sai quá 3 lần -> Không cho nhập nữa.
+    //                                                     -> "Bạn đã nhập sai quá 3 lần"
+    // let password = prompt("Nhập word : ");
+    // let count = 0;
+    // Có biến đêm count, mỗi lần nhập sai password thì biến count sẽ tăng 1 đơn vị.
+    // Nếu count >=3 (tức là nhập sai quá 3 lần) -> Không cho nhập nữa break;
+    // while (password !== "codegym") {
+    //     count++;
+    //     if (count < 3) {
+    //         password = prompt("Sai password, nhập lại đi : ");
+    //     } else {
+    //         alert("Nhập sai quá 3 lần!");
+    //         break;
+    //     }
+    // }
+    // alert("Đăng nhập thành công!");
+
+//    do {
+    // Khối lệnh thực thi mỗi lần lặp.
+    // } while (biểu thức điều kiện ) ;
+
+
+    // let password ;
+    // do {
+    //     password = prompt("Nhập mật khẩu: ");
+    // } while ( password !==  "codegym") ;
+    
+
+
+</script>
+</html>

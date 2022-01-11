@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=prompt("Nhập vào số cần kiểm tra: ");
+    if (n<2){
+        alert("Không phải là SNT. ");
+    }else {
+        let count=0;
+        for (let i=2; i<n;i++){
+            if (n%i===0){
+                count++;
+            }
+        }
+        if (count===0){
+            alert(n+":Là số nguyên tố.");
+        }else {
+            alert(n+"Không phải là số nguyên tố.");
+        }
+    }
+</script>
+
+</body>
+</html>
