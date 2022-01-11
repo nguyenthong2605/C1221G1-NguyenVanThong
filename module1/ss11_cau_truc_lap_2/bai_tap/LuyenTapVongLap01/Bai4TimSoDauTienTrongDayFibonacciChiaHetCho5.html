@@ -7,15 +7,15 @@
 <body>
 <script>
     let soLuong=prompt("Nhập số lượng: ");
-    let fibo;
+    let fibonacci;
     let n1=0;
     let n2=1;
     for (let i =1;i<=soLuong ;i++){
-        fibo = n1 + n2;
+        fibonacci = n1 + n2;
         n1 = n2;
-        n2 = fibo;
-        if (fibo%5===0){
-            alert("Số chia hết cho 5 trong dãy là: "+fibo);
+        n2 = fibonacci;
+        if (fibonacci%5===0){
+            alert("Số chia hết cho 5 trong dãy là: "+fibonacci);
             break;
         }
 }
