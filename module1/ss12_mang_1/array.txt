@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    // Cách 1 :
+    // let arrayName = [item1, item2,...] ;
+
+    // Cách 2 :
+    // let arrayName = new Array(item1, item2,...) ;
+
+    // Cách 3 :
+    // let arrayName = Array(item1, item2,...) ;
+
+    // Lưu ý: let arr = new Array(5) -> 5 phần tử (nhưng có giá trị rỗng).
+    //          index     0       1      2         3       4      5         6
+    // let listStudents = ["Thảo", "An", "Hoàng", "Trình", "Khoa", "Giảng", "Long"];
+
+    //    Cách duyệt mảng 1 chiều.
+    //    Cách 1: Dùng for.
+    //       for ( let i = 0; i < listStudents.length ; i++   ){
+    //           if (listStudents[i] === "Thảo") {
+    //               document.write("Học viên có STT (index) là " + i + " có tên là: " + listStudents[i]);
+    //               document.write("<br>");
+    //           }
+    //       }
+
+    //    Dùng for-of -> duyệt từng phần tử trong mảng -> trả về giá trị của từng phần tử.
+    //     document.write("--------------------For-of---------------");
+    //     document.write("<br>");
+    //     for (let item of listStudents) {
+    //         document.write(item);
+    //         document.write("<br>");
+    //     }
+
+    //    Dùng for-in -> duyệt từng phần tử trong mảng -> trả về vị trí index của từng phần tử.
+    //     document.write("--------------------For-in---------------");
+    //     document.write("<br>");
+    //     for (let item in listStudents) {
+    //         document.write(item);
+    //         document.write("<br>");
+    //     }
+    //    for-thường: Duyệt mảng từ đầu cuối, cuối đầu, giữa -> .......
+    //    for-of, for-in :Mặc định duyệt từ đầu tới cuối mảng.
+
+    //    Các phương thức để thao tác với mảng.
+    //    push()    : Thêm phần tử vào cuối mảng.
+    //    unshift() : Thêm phần tử vào đầu mảng.
+    //    pop()     : Xóa phần tử cuối mảng.
+    //    shift()   :  Xóa phần tử cuối mảng.
+    //    splice()  :  Xóa phần tử theo vị trí mong muốn.
+    //    sort()    : Sắp xếp mảng.
+    //    concat()  : Gọp 2 mảng -> trả về 1 mảng mới.
+    //    indexOf( giá trị cần tìm) : Tìm phần tử trong mảng -> trả về vị trí phần tử xuất hiện trong mảng, nếu khoogn tìm thấy trả về -1.
+    //     let arrNum = [1, 42,3,24,5,16];
+    //
+    //     let arr2 = arrNum.map(function (x) {
+    //         return x * 10;
+    //     })
+    // document.write(arr2);
+
+
+    //     arrNum.sort( function (x, y) {
+    //         return x - y;
+    //     } );
+
+    // Khai báo mảng 2 chiều : .
+    // let arrNum = [
+    //     [1, 2, 3 ],
+    //     [4, 5, 6],
+    //     [7, 8, 9]
+    // ];
+    //
+    // for (let i = 0; i < arrNum.length; i++){
+    //     for (let j = 0; j < arrNum[i].length ; j++){
+    //         document.write("Index: " + i + " " + j + " Giá trị là: " + arrNum[i][j]);
+    //         document.write("<br>");
+    //     }
+    // }
+
+</script>
+</html>

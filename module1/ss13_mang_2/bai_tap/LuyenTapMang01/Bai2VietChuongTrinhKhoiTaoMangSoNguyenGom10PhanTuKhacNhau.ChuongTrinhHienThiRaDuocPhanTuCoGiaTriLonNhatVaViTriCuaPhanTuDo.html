@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr= Array(1,2,3,4,5,6,7,8,9,10);
+    // let soLonNhat = Math.max(...arr);
+    // for (let i=0 ; i < arr.length ; i++){
+    //     if (arr[i]===soLonNhat){
+    //         document.write("Số lớn nhất trong mảng là: "+soLonNhat+"Có vị trí(index)"+i);
+    //     }
+    // }
+    let arr= Array(6,4,3,6,5,6,11,8,9,10);
+    let max = arr[0];
+    let index;
+    for (let i=0 ; i < arr.length ; i++ ){
+        if (max<arr[i]){
+            index=i;
+            max=arr[i];
+        }
+    }document.write("Số lớn nhất trong mảng là: "+max+"<br>"+"Có vị trí: "+index);
+</script>
+
+</body>
+</html>
