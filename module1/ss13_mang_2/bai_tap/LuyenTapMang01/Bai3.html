@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr= Array(5,6,8,3,5,12,15,17,21,33);
+    let max = arr[0];
+    let sum=0;
+    let index;
+    for (let i=0 ; i < arr.length ; i++ ){
+        sum=sum+arr[i];
+        if (max<arr[i]){
+            index=i;
+            max=arr[i];
+        }
+    }let avg= sum/arr.length;
+    document.write("Số lớn nhất trong mảng là: "+max+"<br>"+"Giá trị trung bình của mảng là: "+avg);
+</script>
+
+</body>
+</html>

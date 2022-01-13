@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    let flag;
+    do {
+        n=parseInt(prompt("Nhập vào độ dài của mảng: "));
+        flag=(parseInt(n)===n)&& n>0
+    }while (!flag);
+    n=parseInt(n);
+    let array = new Array(n);
+    for (let i=0; i<array.length ; i++){
+        array[i] = parseInt(prompt("Nhập phần tử thứ: "+i))
+    }
+    array.sort(function (x,y) {
+        return y-x });
+    document.write("Thứ tự giảm dần là: "+array);
+</script>
+
+</body>
+</html>
