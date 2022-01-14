@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thang = parseInt(prompt("số tháng vay"));
+    let tien = parseInt(prompt("số tiền vay"));
+    let tienLai = 0
+    let laiSuat = 0.01;
+    for (i=0;i<thang;i++){
+        tienLai = (tien*laiSuat)*thang + tienLai
+    }document.write("tiền lãi là"+tienLai)
+</script>
+
+</body>
+</html>
