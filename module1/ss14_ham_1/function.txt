@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập điểm Toán:</label>
+<input type="text" id="toan">
+
+<label>Nhập điểm Lý:</label>
+<input type="text" id="ly">
+
+<label>Nhập điểm Hóa:</label>
+<input type="text" id="hoa">
+
+<button onclick="getScore()">Tính điểm</button>
+<!--<button onclick="getScore2(5,5,5)">Tính điểm</button>-->
+<h1 id="rs"> Result</h1>
+</body>
+<script>
+    //     function tenHam(thamSo1, thamSo2,….){
+    //            Khối lệnh được thực thi ;
+    //     }
+    // Function lay gia tri tu o input nhap vao
+    // function getScore() {
+    //     let toan = parseInt(document.getElementById("toan").value);
+    //     let ly = parseInt(document.getElementById("ly").value);
+    //     let hoa = parseInt(document.getElementById("hoa").value);
+    //     let avg = (toan + ly + hoa) / 3;
+    //     document.getElementById("rs").innerText = avg;
+    // }
+    // let toan = 9;
+    // let ly = 8;
+    // let hoa = 8;
+    // // Khai báo tham số và truyền đối số khi gọi hàm.
+    // // Truyền tham trị, khi thay đổi giá trị của tham số ở trong function thì giá trị gốc truyền vào không bị thay đổi theo.
+    // function getScore2(t, l, h) {
+    //     document.write("Điểm toán: " + t);
+    //     document.write("<br>");
+    //     document.write("Điểm Lý: " + l);
+    //     document.write("<br>");
+    //     document.write("Điểm Hóa: " + h);
+    //     document.write("<br>");
+    //     let avg = (t + l + h) / 3;
+    //     return avg;
+    // }
+    // let score = getScore2( toan, ly , hoa );
+    // console.log(toan);
+    // console.log(ly);
+    // console.log(hoa);
+
+
+    // let array = [1,2,3,4,5,6,7,8,9,0] ;
+    // Truyền tham chiếu, khi thay đổi giá trị của tham số ở trong function thì giá trị gốc truyền vào bị thay đổi theo.
+    // function testArray( arr ){
+    //     for( let i = 0; i < arr.length; i++){
+    //         arr[i] = 0;
+    //         document.write("Vị trí i: " + i + " Giá trị: " + arr[i]) ;
+    //         document.write("<br>");
+    //     }
+    // }
+    //
+    // testArray( array ) ;
+    // console.log(array) ;
+
+    // function a1(a, b) {
+    //     alert("2 tham so");
+    // }
+    // function a1(a) {
+    //     alert("1 tham so");
+    // }
+    // a1(1);
+
+
+</script>
+</html>

@@ -6,8 +6,13 @@
 </head>
 <body>
 <script>
-
+    let index=prompt("Nhập từ khóa cần dịch: ");
+    let tiengAnh=["hello","cat","dog","banana","apple","tomato","mango"];
+    let tiengViet=["xin chào","mèo","chó","trái chuối","táo","cà chua","xoài"];
+    let index1=tiengAnh.indexOf(index);
+    if (index1 > -1){
+        document.write(tiengViet[index1]);
+    }
 </script>
-
 </body>
 </html>
