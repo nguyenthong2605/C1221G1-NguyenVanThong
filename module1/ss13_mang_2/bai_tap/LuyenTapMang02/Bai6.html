@@ -6,21 +6,17 @@
 </head>
 <body>
 <script>
-    let arr = new Array(prompt("Nhập vào một chuỗi: "));
-    let arrFix = [];
-    document.write("Mảng gồm ["+arr+"]<br>")
-    for (let i=0; i<arr.length ; i++){
-        for (let j=0; j<arr[i].length; j++){
-            if(arr[i][j] == "-"){
-               arr[i][j] = ("_")
-                arrFix.push("_");
-            }else{
-                arrFix.push(arr[i][j]);
-            }
-
+    let n = prompt("Nhập độ dài của mảng ký tự: ");
+    let arr = [];
+    for (let i=0; i<n; i++){
+        arr[i] = prompt("Nhập ký tự: ");
+    }
+    for (let i=0; i<n; i++){
+        if (arr[i] == "-"){
+            arr[i] = "_";
         }
     }
-    document.write("Mảng sửa ["+arrFix.join("")+"]<br>");
+    alert("Mảng ký tự chuyển đổi là: "+arr);
 </script>
 
 </body>

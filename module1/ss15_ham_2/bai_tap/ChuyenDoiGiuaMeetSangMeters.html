@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function footToMeters(foot) {
+        let meter = 0.305*foot;
+        return meter;
+    }
+
+    function meterToFoot(meter) {
+        let foot = meter/0.305;
+        return foot;
+    }
+    let foot = prompt("Input foot:");
+    let meter = prompt("Input meter:");
+    alert("Meter: " + footToMeters(foot));
+    alert("Foot: " + meterToFoot(meter));
+
+     // function transfer() {
+     //     let foot = prompt("Enter foot:");
+     //     let meter = prompt("Enter meter:");
+     //
+     //     alert("foot to meter: " + 0.305 * foot + "meter to foot: " + meter / 0.305);
+     // }
+     // transfer()
+
+</script>
+</body>
+</html>
