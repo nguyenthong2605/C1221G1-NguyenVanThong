@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [2,3,4,5,2,5,2,"d","s","a"];
+    let kiTu=prompt("Nhập kí tự: ");
+    let count = 0;
+    function kiemTra(kiTu,arr) {
+        for (let i=0; i<arr.length; i++){
+            if (kiTu == arr[i]){
+                count++;
+            }
+        }
+        if (count !== 0){
+            return count;
+        }else {
+            return -1;
+        }
+    }
+    let result = kiemTra(kiTu,arr);
+    if (result == -1){
+        alert("Không tìm thấy! ");
+    }else {
+        alert(count);
+    }
+</script>
+
+</body>
+</html>

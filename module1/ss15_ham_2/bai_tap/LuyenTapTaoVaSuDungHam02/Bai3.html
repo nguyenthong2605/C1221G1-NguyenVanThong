@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaThua(a) {
+        let tinhGiaiThua= 1;
+        if (a >= 0) {
+            for (let i = 1; i <= a; i++) {
+                tinhGiaiThua = tinhGiaiThua * i;
+            }
+        } else {
+            return "Không xác định";
+        }
+        return tinhGiaiThua;
+    }
+    let a=parseInt(prompt("Nhập vào 1 số: "));
+    document.write("Giai thừa của số đó là: "+giaThua(a));
+</script>
+</body>
+</html>
