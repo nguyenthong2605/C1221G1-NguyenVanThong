@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+</body>
+
+<script>
+    // let c = document.getElementById("myCanvas");
+    // let ctx = c.getContext("2d");
+    // // Set lại cài đặt mặc định cho nét vẽ khi vẽ.
+    // ctx.beginPath();
+    // ctx.arc(200, 200, 100, 0 , Math.PI * 2);
+    // ctx.strokeStyle = "red";
+    // ctx.stroke();
+
+
+
+
+    // class NameClass {
+    //     constructor (tham số 1, tham số 2,….) {
+    //     this.thuộc tính 1 = tham số 1;
+    //     this.thuộc tính 2 = tham số 2;
+    // ……………
+    // }
+    // hanhVi1(…){….}
+    // hanhVi2(…){….}
+    // }
+
+    //VD : Lớp Student -> Thuộc tính : Tên, tuổi, giới tính, địa chỉ.
+    //                 -> Hành vi    : Học, chơi thể thao,...
+    class Student {
+        // Hàm khởi tạo, Khi tạo đối tượng thì sẽ tự động gọi constructor.
+        // Sẽ khai báo các thuộc tính của class = từ khóa this .
+        constructor(name, age, address, gender) {
+            this.name = name ;
+            this.age = age ;
+            this.address = address;
+            this.gender = gender;
+        }
+        study(){
+            console.log("Học sinh đang học!");
+        }
+        playSport( nameSport ){
+            console.log("Học sinh đang chơi " + nameSport);
+        }
+
+    //    Getter, Setter -> Tính bao đóng
+        getName(){
+            return this.name ;
+        }
+        getAge(){
+            return this.age;
+        }
+
+        setName( newName ){
+            this.name = newName;
+        }
+        setAge( newAge ){
+            this.age = newAge;
+        }
+
+    }
+
+    let student1 = new Student("Chiến", 30, "Quảng Bình", "Nam");
+    let student2 = new Student("Hải");
+    student1.setName("Lĩnh");
+    student1.setAge(20);
+    console.log( student1 );
+
+    student1.playSport("Đá bóng");
+
+
+
+
+
+
+    // Trong đó:
+    //     -	NameClass : tên class (đặt theo quy tắc PascalCase)
+    // -	constructor() : Hàm khởi tạo, được gọi khi tạo ra các đối tượng
+    // bằng từ khóa new NameClass(…) .
+    // -	Thuộc tính 1, thuộc tính 2 :Là các thuộc tính mà class quy định
+    // cho đối tượng
+    // -	Hành vi 1, hành vi 2 : Là các hành vi mà class quy định
+    // cho đối tượng .
+    // -	this : đại diện cho đối tượng hiện tại, thời điểm mà người dùng tương tác.
+    // -> Đồng thời dùng để phân biệt thuộc tính và tham số cùng tên.
+
+
+
+    // let test = {
+    //     name : "Chiến",
+    //     age: 30,
+    //     gender: "Name"
+    // }
+    // console.log(test);
+
+
+</script>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+// Student (tên, tuổi, gới tính), Teacher (tên, tuổi, gới tính, tình trạng hôn nhân, lương,..)
+
+    class Person {
+        constructor(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+        eating(){
+            console.log(this.name + " Đang ăn");
+        }
+        sleeping(){
+            console.log(this.name + " Đang ngủ");
+        }
+    }
+
+    class Teacher extends Person {
+        constructor(name, age, gender, salary) {
+            //Đại diện cho class Cha -> gọi tới constructor của class cha.
+            super(name, age, gender);
+            this.salary = salary;
+        }
+
+        playSport(){
+            console.log("Chơi game");
+        }
+    }
+
+    let teacher1 = new Teacher("Chiến", 30, "Nam", 1000);
+    console.log(teacher1);
+</script>
+</html>
+
+

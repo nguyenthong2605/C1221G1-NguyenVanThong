@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Date {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        getDay() {
+            return this.day;
+        }
+        getMonth() {
+            return this.month;
+        }
+        getYear() {
+            return this.year;
+        }
+        setDay( newDay ) {
+            this.day = newDay;
+        }
+        setMonth( newMonth ) {
+            this.month = newMonth;
+        }
+        setYear( newYear ) {
+            this.year = newYear;
+        }
+        setDate(day,month,year){
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        toString(){//biểu diễn thông tin đối tượng chuỗi
+            return this.day+"/"+this.month+"/"+this.year
+        }
+    }
+    let day = new Date(2, 2, 2007);
+    // day.getDay();
+    // day.getMonth();
+    // day.getYear();
+    // console.log(day);
+    day.setDay(10);
+    day.setMonth(10);
+    day.setYear(2019);
+    console.log(day);
+    day.setDate(18,1,2022);
+    console.log(day.toString())
+</script>
+
+</body>
+</html>

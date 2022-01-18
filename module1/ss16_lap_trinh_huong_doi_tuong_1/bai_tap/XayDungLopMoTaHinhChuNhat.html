@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+    // Viết một lớp các đối tượng hình chữ nhật lấy tên là Rectangle, mỗi hình chữ nhật đều có những đặc tính sau:
+    //
+    //     + Có thông số chiều dài (int).
+    //
+    // + Có thông số chiều rộng (int).
+    //
+    // + Có tính năng tính diện tích.
+    //
+    // + Có tính năng tính chu vi.
+    //
+    // + Có tính năng hiển thị trực quan hình chữ nhật bằng cách vẽ lên canvas
+    //
+    // Sử dụng lớp Rectangle vừa định nghĩa để viết một chương trình JavaScript  với kịch bản như sau:
+    //
+    //     Khai báo và khởi tạo một đối tượng kiểu Rectangle.
+    //
+    //     Hiển thị hình chữ nhật trên màn hình web
+    //
+    // Thay đổi chiều dài và chiều rộng của hình chữ nhật.
+    //
+    //     In ra màn hình diện tích và chu vi của hình chữ nhật đó.
+    class Reactangle {
+        constructor(dai,rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        getDai(){
+            return this.dai;
+        }
+        getRong(){
+            return this.rong;
+        }
+        getDienTich(){
+            return this.dai*this.rong;
+        }
+        getChuVi(){
+            return (this.dai+this.rong)*2;
+        }
+        setDai(newDai){
+            this.dai = newDai;
+        }
+        setRong(newRong){
+            this.rong = newRong;
+        }
+        getHinhChuNhat(){
+            let chuNhat = document.getElementById("myCanvas");
+            let ctx = chuNhat.getContext("2d");
+            ctx.fillRect(0,0,this.dai*30,this.rong*30);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+        }
+    }
+    let rectangle = new Reactangle(18,4);
+    let dienTich = rectangle.getDienTich();
+    let chuVi = rectangle.getChuVi();
+    document.write("Diện tích hình chữ nhật = "+dienTich+", Chu vi hình chữ nhật = "+chuVi+"<br>");
+    rectangle.setDai(30);
+    rectangle.setRong(8);
+    let dienTich1 = rectangle.getDienTich();
+    let chuVi1= rectangle.getChuVi();
+    document.write("Diện tích hình chữ nhật = "+dienTich1+", Chu vi hình chữ nhật = "+chuVi1);
+    let display = rectangle.getHinhChuNhat();
+
+
+
+
+</script>
+
+</body>
+</html>
