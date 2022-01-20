@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+        getWeight () {
+            return this.weight
+        }
+        setWeight (newWeight){
+            this.weight = newWeight;
+        }
+        decrease (){
+            if (this.weight > 0){
+                this.weight--
+            }
+        }
+        isEmpt (){
+        }
+    }
+    class Human {
+        constructor(name,gender,weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        getName (){
+            return this.name;
+            document.write("Tên là: "+this.name);
+        }
+        getWeight (){
+            return this.weight;
+            document.write("Cân nặng: "+this.weight);
+        }
+        getApple (){
+            return this.apple.getWeight();
+        }
+        setName (newName){
+            this.name = newName;
+        }
+        setWeight (newWeight){
+            this.weight = newWeight;
+        }
+        setGender (newGender){
+            this.gender = newGender;
+        }
+        setApple (apple){
+            this.apple = apple;
+        }
+        checkApple (){
+            if (this.getApple() < 0){
+                return false;
+            }
+            return true;
+        }
+        eat (){
+            if (this.checkApple() == false){
+                document.write("Đã cắn hết táo");
+            }else {
+                this.apple.decrease();
+                document.write("Đã ăn 1 trái táo, còn "+this.getApple());
+            }
+        }
+        isMale (){
+            if (this.gender == false){
+                return "Nữ"
+                document.write("Giới tính là nữ.");
+            }return "Nam"
+            document.write("Giới tính là nam.");
+        }
+        stay (string){
+            this.string = string;
+        }
+    }
+    let apple = new Apple(10)
+    let human = new Human()
+    human.setName("Adam")
+    human.setWeight("50kg")
+    human.setGender(true)
+    document.write("Tên: "+human.name+" - Giới tính: "+human.isMale()+" - Cân nặng: "+human.weight+"<br>")
+    human.setApple(apple)
+    for (let i=0; i<10;i++) {
+        human.eat()
+        document.write("<br>");
+    }
+</script>
+
+</body>
+</html>

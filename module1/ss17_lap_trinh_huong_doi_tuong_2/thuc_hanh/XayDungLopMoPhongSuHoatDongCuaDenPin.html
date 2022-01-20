@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+        getEnergy (){
+            return this.energy;
+        }
+        setEnergy (newEnergy){
+            this.energy = newEnergy;
+        }
+        decreaseEnergy (){
+            if (this.energy > 0){
+                this.energy--;
+            }
+        }
+    }
+    class FlashLamp extends Battery{
+        constructor(energy,battery) {
+            super(energy);
+            this.battery = battery;
+        }
+        getBattery (){
+            return this.battery;
+        }
+        getBatteryInfo (){
+            return this.getEnergy();
+        }
+        setBattery (newBattery){
+            this.battery = newBattery;
+        }
+        turnOn (){
+            this.status = true;
+            this.decreaseEnergy();
+        }
+        turnOff (){
+            this.status = false;
+        }
+        den (){
+            if (this.status == true){
+                alert("Đèn sáng");
+
+            }else {
+                alert("Đèn tắt");
+            }
+        }
+    }
+    let flashLamp1 = new FlashLamp(10,10);
+    flashLamp1.turnOn();
+    flashLamp1.den();
+    // flashLamp1.turnOff();
+    // flashLamp1.den();
+    // flashLamp1.getBatteryInfo();
+    document.write("Kiểm tra pin: "+flashLamp1.getBatteryInfo()+"<br>");
+
+
+
+
+
+</script>
+
+</body>
+</html>
