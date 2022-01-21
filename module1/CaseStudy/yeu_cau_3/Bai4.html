@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapSo;
+    do {
+        nhapSo = prompt("Nhập số bất kì để chuyển thành chữ");
+    } while (isNaN(nhapSo));
+    let str = ["không","một","hai","ba","bốn","năm","sáu","bảy","tám","chín"];
+    let arrNum = nhapSo.split('');
+    let  dis = "";
+    for (let i = 0; i < arrNum.length; i++) {
+        dis += " "+str[arrNum[i]];
+    }
+    document.write(dis);
+</script>
+
+</body>
+</html>

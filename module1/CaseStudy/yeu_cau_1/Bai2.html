@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     let height=parseInt(prompt("Nhập chiều cao h: "));
+    for (let i=1; i<=height; i++){
+        for (let j=1; j<=height; j++) {
+            if (i == height || j == 1 || i == j) {   //(Chiều cao tam giác vuông || cạnh đáy tam giác vông || cạnh huyền )
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+
+</script>
+
+</body>
+</html>
