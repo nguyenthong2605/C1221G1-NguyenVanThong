@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function chuanHoa(str) {
+        let chuoi = str.trim();
+        // bỏ khoảng trống ở đầu và cuối xâu
+        let arr = chuoi.split(' ');
+        // tách xâu thành mảng
+        console.log(arr);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === '') {
+                arr.splice(i, 1);
+                //xóa ở vị trí mong muốn theo đơn vị
+                i--;
+            }
+        }
+        console.log(arr);
+        let text = "";
+        for (let i = 0; i < arr.length; i++) {
+            text += doiChuoi(arr[i]) + ' ';
+        }
+        console.log(text);
+
+        function doiChuoi(chuoi) {
+            let array = chuoi.split('');
+            for (let i = 0; i < array.length; i++) {
+                if (i === 0) {
+                    array[i] = array[i].toUpperCase();
+                } else {
+                    array[i] = array[i].toLowerCase();
+                }
+            }
+            return array.join('');
+        }
+    }
+    chuanHoa("  Thong     thong    TTTasad ");
+</script>
+
+</body>
+</html>

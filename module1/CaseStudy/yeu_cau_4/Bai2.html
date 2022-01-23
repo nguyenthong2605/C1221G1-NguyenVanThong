@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function differentSymbolsNaive(str) {
+            let arr=[];
+            if (str != '') {
+                arr.push(str[0]);
+            }
+            for (let i=1; i<str.length; i++){
+                let flag = false;
+                for (let j=0; j<arr.length; j++){
+                    if (str[i] != arr[j]){
+                        flag = true;
+                    } else {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) arr.push(str[i]);
+            }
+            return arr.length;
+        }
+
+        console.log(differentSymbolsNaive("abcbadeeeffffa"));
+    </script>
+</body>
+</html>
