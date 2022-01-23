@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doUong =["cà phê","nước cam","bia","nước ngọt",];
+    let gia =[10,30,25,15];
+    let listDoUong ="";
+    let chooseDrink=[];
+    for (let i=0; i<doUong.length; i++){
+        listDoUong += "\n"+ (i+1)+"."+doUong[i]+"-giá"+gia[i];
+    }
+    let tongTien = 0;
+    do {
+        let choose = prompt(listDoUong +"\n"+((doUong.length+1)+ ". exit"));
+        chooseDrink.push(doUong[choose-1]);
+        if (choose==doUong.length+1){
+            break;
+        }
+        let soLuong = prompt("Nhập số lượng cho đồ uống + "+doUong[chooseDrink-1]);
+        tongTien += soLuong*gia[choose-1];
+    }while (true)
+    alert(chooseDrink+"tổng tiền hóa đơn là : "+tongTien);
+</script>
+
+</body>
+</html>
