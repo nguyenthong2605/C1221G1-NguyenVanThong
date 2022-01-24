@@ -13,10 +13,17 @@
             document.write("&nbsp&nbsp");
         }
         for (let j = 1; j <=i*2-1 ; j++) {
-            document.write("*");
+            //(đỉnh, đáy, 2 cạnh bên của tam giác)
+            if (i == 1 || i == height || j == 1 || j == i * 2 - 1) {
+                document.write("*");
+            } else {
+                //đẩy khoảng trống vào
+                document.write("&nbsp&nbsp");
+            }
         }
         document.write("<br>");
     }
 </script>
+
 </body>
 </html>

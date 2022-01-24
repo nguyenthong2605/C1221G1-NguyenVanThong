@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function compareToString(str1, str2) {
+        let arr1 = str1.split("").sort();
+        let arr2 = str2.split("").sort();
+        let result = [];
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr1[i] == arr2[j]) {
+                    result.push(arr1[i]);
+                    arr1[i] = ",";
+                    arr2[j] = ".";
+                }
+            }
+        }return result;
+    }console.log(compareToString("adcsaxc","deacrac"));
+</script>
+
+</body>
+</html>
